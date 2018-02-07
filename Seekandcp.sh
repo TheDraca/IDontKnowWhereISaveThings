@@ -10,7 +10,7 @@ copy () {
   find ${SearchLocation} -name "$ext" -exec cp {} ${CopyLocation}/${Folder}/ \;
 }
 
-declare -A CopyTypes=( ["*.doc*"]="Documents" ["*.ppt*"]="Powerpoints" ["*.xl*"]="Spreadsheets" ["*.pub"]="Publisher" ["*.mp3"]="Music" ["*.wma"]="Music" ["*.avi"]="Videos" ["*.mov"]="Videos" ["*.wmv"]="Videos" ["*.mkv"]="Vidoes" ["*.flv"]="Videos" ["*.mp4"]="Videos" ["*.png"]="Images" ["*.jpeg"]=Images [*.gif]=Gifs ["*.pdf"]="PDFs")
+declare -A CopyTypes=( ["*.doc*"]="Documents" ["*.ppt*"]="Powerpoints" ["*.xl*"]="Spreadsheets" ["*.pub"]="Publisher" ["*.mp3"]="Music" ["*.wma"]="Music" ["*.avi"]="Videos" ["*.mov"]="Videos" ["*.wmv"]="Videos" ["*.mkv"]="Vidoes" ["*.flv"]="Videos" ["*.mp4"]="Videos" ["*.png"]="Images" ["*.jpeg"]="Images" ["*.gif"]="Gifs" ["*.pdf"]="PDFs")
 
 for ext in "${!CopyTypes[@]}"
 do
